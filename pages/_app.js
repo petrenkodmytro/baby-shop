@@ -1,5 +1,5 @@
 // import NextNprogress from "nextjs-progressbar";
-import "../styles/main.css";
+import "../styles/main.scss"; // вместо строк 7-13
 
 function MyApp({ Component, pageProps }) {
   return (
