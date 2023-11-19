@@ -14,7 +14,7 @@ const Posts = ({ posts: serverPosts }: PostsPageProps) => {
   // useEffect - в рамках SSR бесполезен
   useEffect(() => {
     async function load() {
-      const res = await fetch("http://localhost:4200/posts");
+      const res = await fetch(`${process.env.API_URL}/posts`);
       const json = await res.json();
       setPosts(json);
     }

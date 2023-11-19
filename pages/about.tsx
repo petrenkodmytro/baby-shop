@@ -20,7 +20,7 @@ const About = ({ title }: Title) => {
 };
 
 About.getInitialProps = async () => {
-  const res = await fetch("http://localhost:4200/about");
+  const res = await fetch(`${process.env.API_URL}/about`);
   const data = await res.json();
   return {
     title: data.title,

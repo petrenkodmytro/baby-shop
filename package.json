@@ -11,6 +11,7 @@
     "mock": "json-server -w db.json -p 4200 -d 1500"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "next": "14.0.1",
     "nextjs-progressbar": "^0.0.16",
     "react": "^18",

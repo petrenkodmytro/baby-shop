@@ -13,7 +13,7 @@ const Post = ({ post: serverPost }: PostPageProps) => {
   // console.log(serverPost);
   useEffect(() => {
     async function load() {
-      const res = await fetch(`http://localhost:4200/posts/${router.query.id}`);
+      const res = await fetch(`${process.env.API_URL}/posts/${router.query.id}`);
       const data = await res.json();
       setPost(data);
     }
