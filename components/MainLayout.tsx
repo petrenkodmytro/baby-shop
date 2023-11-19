@@ -1,12 +1,13 @@
+import { MainLayout } from "@/interfaces/layout";
 import Head from "next/head";
 import Link from "next/link";
-import React, { Children } from "react";
+import React from "react";
 
-const MainLayout = ({ children, title }) => {
+const MainLayout = ({ children, title }: MainLayout) => {
   return (
     <>
       <Head>
-        <title>{title} | Next Course</title>
+        <title>{title} | Baby-Shop</title>
         <meta name="keywords" content="next,react" />
         <meta name="description" content="tutorial" />
         <meta charSet="utf-8" />
