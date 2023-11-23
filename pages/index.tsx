@@ -3,7 +3,7 @@ import MainLayout from "../components/MainLayout";
 const Index = () => {
   return (
     <MainLayout title={"Home Page"}>
-      <h1>Index</h1>
+      <h1>Home Page</h1>
     </MainLayout>
   );
 };

@@ -8,8 +8,8 @@ const MainLayout = ({ children, title }: MainLayout) => {
     <>
       <Head>
         <title>{title} | Baby-Shop</title>
-        <meta name="keywords" content="next,react" />
-        <meta name="description" content="tutorial" />
+        <meta name="keywords" content="t-shot, dress, shoes, shorts" />
+        <meta name="description" content="baby-shop" />
         <meta charSet="utf-8" />
       </Head>
       <nav>
@@ -19,8 +19,8 @@ const MainLayout = ({ children, title }: MainLayout) => {
         <Link legacyBehavior href={"/about"}>
           <a>About</a>
         </Link>
-        <Link legacyBehavior href={"/posts"}>
-          <a>Posts</a>
+        <Link legacyBehavior href={"/products"}>
+          <a>Products</a>
         </Link>
       </nav>
       <main>{children}</main>
