@@ -1,18 +1,17 @@
 import Router from "next/router";
 import MainLayout from "../components/MainLayout";
-
+import Link from "next/link";
 
 const About = () => {
-  const linkClickHandler = () => {
-    // Router.push() - go to url
-    Router.push("/");
-  };
-
   return (
     <MainLayout title={"About Page"}>
       <h1>About Page</h1>
-      <button onClick={linkClickHandler}>Go back to Home</button>
-      <button onClick={() => Router.push("/products")}>Go to products</button>
+      <Link href={"/"} className="block italic text-indigo-500">
+        Go back to Home
+      </Link>
+      <button onClick={() => Router.push("/products")} className="italic text-indigo-500">
+        Go to Products
+      </button>
     </MainLayout>
   );
 };

@@ -48,7 +48,7 @@ const Products = ({ products: serverProducts }: ProductsPageProps) => {
             <Product key={product.id} product={product} />
           ))}
         </div>
-        <button onClick={linkClickHandler}>Go back to Home</button>
+        <Link href={"/"} className="italic text-indigo-500">Go back to Home</Link>
       </section>
     </MainLayout>
   );

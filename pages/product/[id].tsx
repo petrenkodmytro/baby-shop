@@ -43,7 +43,7 @@ const Product = ({ product: serverProduct }: ProductPageProps) => {
         </div>
       </div>
 
-      <Link href={"/products"}>Back to all products</Link>
+      <Link href={"/products"} className="italic text-indigo-500">Back to all products</Link>
     </MainLayout>
   );
 };
