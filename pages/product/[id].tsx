@@ -38,7 +38,7 @@ const Product = ({ product: serverProduct }: ProductPageProps) => {
       <div>
         <h1>{product.name}</h1>
         <p>{product.description}</p>
-        <div className="max-h-40">
+        <div className="min-h-40">
           <ProductImage product={product} fill />
         </div>
       </div>

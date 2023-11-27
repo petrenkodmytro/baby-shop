@@ -29,6 +29,7 @@ const MainLayout = ({ children, title }: MainLayout) => {
           nav {
             position: fixed;
             display: flex;
+            z-index: 5;
             justify-content: space-around;
             align-items: center;
             height: 60px;
